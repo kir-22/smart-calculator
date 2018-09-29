@@ -6,34 +6,34 @@ class SmartCalculator {
 
   add(number) {
     // your implementation
-    this.val=this.val + "+" +number;
+    this.val += `+${number}`;
     return this;
   }
   
   subtract(number) {
     // your implementation
-    this.val=this.val + "-" +number;
+    this.val += `-${number}`;
     return this;
   }
 
   multiply(number) {
     // your implementation
-    this.val=this.val + "*" +number;
+    this.val += `*${number}`;
     return this;
   }
 
   devide(number) {
     // your implementation
-    this.val=this.val + "/" +number;
+    this.val += `/${number}`;
     return this;
   }
 
   pow(number) {
     // your implementation
-    this.val=this.val + "**" +number; 
+    this.val += `**${number}`; 
     return this;
   }
-  valueOf(){
+  toString(){
     //преобразуем строку в число, метод должен вызываться автоматически
     return eval(this.val);
   }
